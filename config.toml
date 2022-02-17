@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com"
+baseURL = "https://richg-github.github.io/docs.github.io/"
 title = "Hugo documentation theme"
 theme = "godocs-3"
 # google analytics
