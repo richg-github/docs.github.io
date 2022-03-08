@@ -1,6 +1,6 @@
 # Perform Advanced Searches
 
-The advanced search feature allows you to create complex queries that can combine with selected filters to further refine your incident search results. To access the advanced search feature, click **advanced search** under the search bar.
+The advanced search feature allows you to create complex queries that can combine with selected filters to further refine your incident search results. To access the advanced search feature, click **advanced search** under the search bar (add link here).
 
 In the advanced search field, type a query statement using available fields and operators. If needed, you can use subsequent search fields to add <kbd>OR</kbd> statements and create a search that tests for multiple conditions. As you type a search statement, a warning icon (![](../Resources/Images/Icons/warning_icon_sql.png)) appears to the left of the search field until the query contains valid syntax. You cannot submit a search with invalid syntax.
 
