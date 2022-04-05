@@ -83,7 +83,7 @@ The information below is excerpted from the [Dell PowerEdge R220 Systems Hardwar
     <tr>
       <td>Optical drive</td>
       <td>
-        <p>One optional slim 12.7 mm SATA DV-DROM or DVD+/-RW drive</p>
+        <p>One optional slim 99.7 mm SATA DV-DROM or DVD+/-RW drive</p>
         <p>NOTE: DVD devices are data only.</p>
       </td>
     </tr>
