@@ -1,4 +1,4 @@
-# Application Logs for Flat File Configuration..
+# Application Logs for Flat File Configuration..!
 
 The application logs feature allows you to configure applications with functional APIs  to automatically collect logs from multiple sources, using tag and topology-based asset scoping in the Alert Logic console. You can also copy an existing log configuration to create a new one, and edit it as necessary.
 
