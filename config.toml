@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://richg-github.github.io/docs.github.io/"
+baseURL = "https://richg-github.github.io/sdk.github.io/"
 title = "Hugo documentation theme"
 theme = "al-docs"
 # google analytics
