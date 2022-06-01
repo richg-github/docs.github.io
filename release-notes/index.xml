@@ -16,4 +16,5 @@ Release date: February 22, 2018 (UK); March 1, 2018 (US) Bug fixes This release 
 Resolve UI error related to IP sharding feature
 Fixed grouping by country in the deny log dashboard
 Stop logging at 10% free space left on Passive WAF
-Read the correct core error log on auto-scaling masters</description></item></channel></rss>
+Read the correct core error log on auto-scaling masters
+2017 ### Release date: December 11, 2017 Version 4.</description></item></channel></rss>
