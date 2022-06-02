@@ -1,6 +1,12 @@
 /*  typography */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
 
+
+@font-face {
+  font-family: '$font-primary';
+  src:  url('fonts/Fellix-Medium.woff2') format('woff2'),
+}
+
 body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
