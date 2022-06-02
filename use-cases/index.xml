@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Use Cases on Hugo documentation theme</title><link>https://richg-github.github.io/sdk.github.io/use-cases/</link><description>Recent content in Use Cases on Hugo documentation theme</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Designed by [Themefisher](https://themefisher.com) &amp; Developed by [Gethugothemes](https://gethugothemes.com)</copyright><lastBuildDate>Fri, 28 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://richg-github.github.io/sdk.github.io/use-cases/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/adjust-scan-frequency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/adjust-scan-frequency/</guid><description>Technical details This example shows you how to tune an Amazon Web Services deployment, though the external scan frequency of any platform type can be modified.
+About scan intervals When selecting the frequency of your external scans the options available are:
+Daily (default) – ensures that every public facing asset is scanned at least once per day Weekly– ensures that every public facing asset is scanned at least once per week Monthly – ensures that every public facing asset is scanned at least once per month About OTIS options Scan intervals are represented as tuning options in the Otis service.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/agent-connectivity-problems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/agent-connectivity-problems/</guid><description>$ alcli assets_query query_assets --account_id 134278880 --asset_types agent,host --filter &amp;#39;{&amp;#34;agent.status&amp;#34;: &amp;#34;!!ok&amp;#34;}&amp;#39; --return_types host --qfields name,key,private_ipv4_addresses
+{
+&amp;#34;assets&amp;#34;: [
+[
+{
+&amp;#34;deployment_id&amp;#34;: &amp;#34;9A4A67CF-C2FC-404C-BFC8-FFE78DAC0154&amp;#34;,
+&amp;#34;key&amp;#34;: &amp;#34;/dc/host/DEADBEEF-7C2F-49AE-8234-DEADBEEF272F&amp;#34;,
+&amp;#34;name&amp;#34;: &amp;#34;my-host-with-agent-installed&amp;#34;,
+&amp;#34;private_ipv4_addresses&amp;#34;: [
+&amp;#34;10.10.214.224&amp;#34;
+],
+&amp;#34;type&amp;#34;: &amp;#34;host&amp;#34;
+}
+]
+],
+&amp;#34;rows&amp;#34;: 1
+} Here is a breakdown of this query:
+Parameter
+Definition
+--account_id
+your account ID
+--asset_types
+the asset types to query for; in this case, we are querying for ‘agent’, which has information about the agent status, and for ‘host’, which has identifying information about the host (e.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/appliance-connectivity-problems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/appliance-connectivity-problems/</guid><description>$ alcli assets_query query_assets --account_id 134278880 --asset_types appliance,host --filter &amp;#39;{&amp;#34;appliance.status&amp;#34;: &amp;#34;!!ok&amp;#34;, &amp;#34;host.alertlogic_appliance_features&amp;#34;: &amp;#34;&amp;gt;&amp;gt;ids&amp;#34;}&amp;#39; --return_types host --qfields name,key,private_ipv4_addresses
+{
+&amp;#34;assets&amp;#34;: [
+[
+{
+&amp;#34;deployment_id&amp;#34;: &amp;#34;9A4A67CF-C2FC-404C-BFC8-FFE78DAC0154&amp;#34;,
+&amp;#34;key&amp;#34;: &amp;#34;/dc/host/DEADBEEF-7C2F-49AE-8234-DEADBEEF272F&amp;#34;,
+&amp;#34;name&amp;#34;: &amp;#34;my-appliance&amp;#34;,
+&amp;#34;private_ipv4_addresses&amp;#34;: [
+&amp;#34;10.10.214.224&amp;#34;
+],
+&amp;#34;type&amp;#34;: &amp;#34;host&amp;#34;
+}
+]
+],
+&amp;#34;rows&amp;#34;: 1
+} Here is a breakdown of this query:
+Parameter
+Definition
+--account_id
+your account ID
+--asset_types
+the asset types to query for; in this case, we are querying for ‘appliance’, which has information about the appliance status, and for ‘host’, which has identifying information about the host (e.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/architecture-diagram/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/architecture-diagram/</guid><description/></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/architecture-diagram_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/architecture-diagram_1/</guid><description/></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/connections-integrations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/connections-integrations/</guid><description>Integrate Response Connections and Integrations</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/control-tower/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/control-tower/</guid><description>AWS Control Tower The following capabilities are included with :
+Threat detection that spans the entire attack surface and operates at scale Protection for your business, including your containers and applications, with the proven combination of a network intrusion detection system (IDS), vulnerability management, log management, extended endpoint protection and web application firewall protection for hybrid, cloud, and on-premises environments Threat intelligence based on industry data and expert security analyst research, with machine-learning based on data analysis across thousands of customers’ attack surface Real-time alerting, incident verification, and remediation guidance from experts available 24/7 with a 15-minute service-level agreement for verified incidents Supported subscription types ## Architecture diagram
+Control Tower Automation uses the following AWS Services to enable automatic protection of newly added AWS Accounts:</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/deployment-and-configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/deployment-and-configuration/</guid><description/></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/deployment-and/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/deployment-and/</guid><description/></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/deployments-discovery-errors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/deployments-discovery-errors/</guid><description>$ alcli --query &amp;#34;[?status.status==&amp;#39;error&amp;#39;]&amp;#34; deployments list_deployments --account_id 134235891
+[
+{
+&amp;#34;account_id&amp;#34;: &amp;#34;134235891&amp;#34;,
+&amp;#34;cloud_defender&amp;#34;: {
+&amp;#34;enabled&amp;#34;: false
+},
+&amp;#34;created&amp;#34;: {
+&amp;#34;at&amp;#34;: 1594667725,
+&amp;#34;by&amp;#34;: &amp;#34;8593ED9F-2F49-4E57-A45C-652AD4A74D12&amp;#34;
+},
+&amp;#34;credentials&amp;#34;: [
+{
+&amp;#34;id&amp;#34;: &amp;#34;DEADB33F-E0D7-4B9F-B457-EE9D7D197FFB&amp;#34;,
+&amp;#34;purpose&amp;#34;: &amp;#34;discover&amp;#34;,
+&amp;#34;version&amp;#34;: &amp;#34;2019-05-21&amp;#34;
+}
+],
+&amp;#34;discover&amp;#34;: true,
+&amp;#34;enabled&amp;#34;: true,
+&amp;#34;id&amp;#34;: &amp;#34;DEADB33F-9BE0-4756-98E9-F7A2B7FBDAFE&amp;#34;,
+&amp;#34;mode&amp;#34;: &amp;#34;automatic&amp;#34;,
+&amp;#34;modified&amp;#34;: {
+&amp;#34;at&amp;#34;: 1594667728,
+&amp;#34;by&amp;#34;: &amp;#34;8593ED9F-2F49-4E57-A45C-652AD4A74D12&amp;#34;
+},
+&amp;#34;name&amp;#34;: &amp;#34;my-deployment&amp;#34;,
+&amp;#34;platform&amp;#34;: {
+&amp;#34;id&amp;#34;: &amp;#34;966236000000&amp;#34;,
+&amp;#34;monitor&amp;#34;: {
+&amp;#34;ct_install_region&amp;#34;: &amp;#34;us-east-1&amp;#34;,
+&amp;#34;enabled&amp;#34;: true
+},
+&amp;#34;type&amp;#34;: &amp;#34;aws&amp;#34;
+},
+&amp;#34;scan&amp;#34;: true,
+&amp;#34;scope&amp;#34;: {
+&amp;#34;exclude&amp;#34;: [],
+&amp;#34;include&amp;#34;: []
+},
+&amp;#34;status&amp;#34;: {
+&amp;#34;status&amp;#34;: &amp;#34;error&amp;#34;,
+&amp;#34;message&amp;#34;: &amp;#34;permission_error&amp;#34;,
+&amp;#34;updated&amp;#34;: 1594928988
+},
+&amp;#34;version&amp;#34;: 7
+}
+] The JMESPath query can be extended to only select deployments of a certain type (&amp;lsquo;aws&amp;rsquo; or &amp;lsquo;azure&amp;rsquo;).</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/download-exposure-details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/download-exposure-details/</guid><description>Download Security Exposure Details from Scanning and Cloud Configuration Checks​ This section details how to retrieve a list of security and configuration exposures that are affecting your infrastructure.
+&amp;lt;MadCap:snippetBlock src=&amp;quot;../Resources/Snippets/sub-types-ess-pro-cd-ci.flsnp&amp;quot; xmlns:MadCap=&amp;ldquo;http://www.madcapsoftware.com/Schemas/MadCap.xsd&amp;quot; /&amp;gt;&amp;lt;MadCap:snippetBlock src=&amp;rdquo;../Resources/Snippets/req-cli-installed.flsnp&amp;quot; xmlns:MadCap=&amp;ldquo;http://www.madcapsoftware.com/Schemas/MadCap.xsd&amp;quot; /&amp;gt;## Technical details
+Security and configuration vulnerabilities are stored in the Assets database in the platform, in a similar fashion to hosts and VPCs. These assets can be retrieved through the via the Assets Query web service.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/list-problems-group-hosts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/list-problems-group-hosts/</guid><description>Download a List of Problems for a Group of Hosts​ The can be used to retrieve a list of exposures reported against a group of hosts; whether by network, subnet, or deployment (and by extension cloud account).
+&amp;lt;MadCap:snippetBlock src=&amp;quot;../Resources/Snippets/sub-typess-ess-pro.flsnp&amp;quot; xmlns:MadCap=&amp;ldquo;http://www.madcapsoftware.com/Schemas/MadCap.xsd&amp;quot; /&amp;gt;&amp;lt;MadCap:snippetBlock src=&amp;rdquo;../Resources/Snippets/req-cli-installed.flsnp&amp;quot; xmlns:MadCap=&amp;ldquo;http://www.madcapsoftware.com/Schemas/MadCap.xsd&amp;quot; /&amp;gt;## Technical Details
+reports configuration and security exposures against the assets in a deployment and these exposures are related to the assets they concern in the Assets model.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/mark-incident-resolved/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/mark-incident-resolved/</guid><description>Mark an Incident as Resolved To ensure that your infrastructure remains secure, provides you with alerts and reports whenever a security incident takes place. To organize these alerts, you may wish to submit a response, taking notes on lessons learned and creating follow up tasks for your operations teams to reduce the risk of similar incidents in the future. This guide provides details on how to implement such a process using the .</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/servicenow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/servicenow/</guid><description>ServiceNow Integration with ServiceNow allows you to:
+Generate a ServiceNow Incident when detects a Security Incident or Security Observation
+Generate a ServiceNow Incident when discovers new vulnerabilities.
+Generate a ServiceNow Incident in response to a scheduled search or report execution.
+Customize and enrich -generated output sent to ServiceNow by adding custom fields or applying jq transformations (https://stedolan.github.io/jq/)
+## Supported subscription types
+The types of notifications you can send to ServiceNow depend on your subscription type.</description></item><item><title/><link>https://richg-github.github.io/sdk.github.io/use-cases/use-cases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://richg-github.github.io/sdk.github.io/use-cases/use-cases/</guid><description>Use Cases Automate Deployments Create a new Data center deployment Create a new AWS deployment Create a new Azure deployment Create a new customer with ordering API Set up scan windows Create API access key Add external asset for scanning Set up new app registry data source Add an SSL certificate for SSL decryption Add scan credentials Adjust automatic deployment parameters for IDS appliances in AWS Use API access keys to implement key rotation Create data center network or subnet in existing deployment Determine which IDS appliance a host is current assigned to Adjust automatic deployment parameters for scan appliances in AWS Get current node list by protection level Adjust vulnerability scan frequency Pause all vulnerability scans for a deployment Change a user role Delete a user Add a user Enable span port / stop agent IDS forwarding in data center Revoke API access key Schedule a saved search Adjust external scan frequency List all locked users in my account Adjust discovery scan frequency Refine Detection Set up IDS exclusions
+Adjust analytic thresholds that are generating false-positive incidents
+Set valid GeoIP information to help threat detection recognize GeoIP-based attacks
+Whitelist network addresses to allow scanning
+Blacklist known network addresses
+### Integrate Response
+Create a webhook and subscribe incidents to it
+Export a list of endpoint events
+Export current incident list
+Retrieve incident details for a single incident by ID (e.</description></item></channel></rss>
