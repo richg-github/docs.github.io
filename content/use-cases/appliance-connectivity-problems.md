@@ -1,14 +1,3 @@
-<h1>Download a List of Appliances Having Problems Communicating with <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></h1><p>This section describes how you can use the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> to download a list of appliances that are reporting problems communicating with the <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> backend.</p>
-
-<MadCap:snippetBlock src="../Resources/Snippets/sub-types-pro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><MadCap:snippetBlock src="../Resources/Snippets/req-cli-installed.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />## Technical Details
-
-<p>
-  <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> appliances report information about themselves to the <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> backend. This information includes details about the appliance status, collection statistics, and any errors the appliance has encountered. Using this information, the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> can be used to retrieve a list of appliances experiencing connectivity issues from the Assets model via Assets Query.</p>
-
-## Download a list of appliances reporting connectivity problems
-
-<p>Use the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> to retrieve a list of appliances reporting non-OK statuses, including appliances in error state and offline appliances:</p>
-
 ```
 
 $ alcli assets_query query_assets --account_id 134278880 --asset_types appliance,host --filter '{"appliance.status": "!!ok", "host.alertlogic_appliance_features": ">>ids"}' --return_types host --qfields name,key,private_ipv4_addresses

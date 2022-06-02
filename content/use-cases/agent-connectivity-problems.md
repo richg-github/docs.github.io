@@ -1,14 +1,3 @@
-<h1>Download a List of Agents Having Problems Communicating with <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></h1><p>This section describes how the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> can be used to download a list of agents that are reporting problems communicating with the <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> backend.</p>
-
-<MadCap:snippetBlock src="../Resources/Snippets/sub-types-pro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><MadCap:snippetBlock src="../Resources/Snippets/req-cli-installed.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />## Technical Details
-
-<p>
-  <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> agents report information about themselves to the <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> backend. This information includes details about the agent status, the agent collection statistics, and any errors the agent has encountered. Using this information, the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> can be used to retrieve a list of agents experiencing connectivity issues from the Assets model via Assets Query.</p>
-
-### Download a list of agents reporting connectivity problems
-
-<p>Use the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> to retrieve a list of agents reporting non-OK statuses (this includes agents in error state and agents which are offline):</p>
-
 ```
 
 $ alcli assets_query query_assets --account_id 134278880 --asset_types agent,host --filter '{"agent.status": "!!ok"}' --return_types host --qfields name,key,private_ipv4_addresses

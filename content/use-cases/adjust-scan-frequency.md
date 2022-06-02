@@ -1,9 +1,3 @@
-<h1>Adjust How Frequently <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> Scans Your External Assets Using the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></h1><p>To ensure that your infrastructure remains secure and no known vulnerabilities are present, <MadCap:variable name="SDKVariables.Company" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> periodically performs vulnerability scans against the assets listed in your deployments. External vulnerability scans are conducted against infrastructure that is publicly accessible over the internet. This guide details how to change the frequency of external vulnerability scans to an interval that suits your operational or compliance needs.</p>
-
-<MadCap:snippetBlock src="../Resources/Snippets/sub-typess-ess-pro.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />## Requirements
-
-<p>This use case requires that the <MadCap:variable name="SDKVariables.CLI" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> is already <a href="../cli/install.md">installed and configured</a>, and that you have at least one deployment configured.</p>
-
 ## Technical details
 
 This example shows you how to tune an Amazon Web Services deployment, though the external scan frequency of any platform type can be modified.
