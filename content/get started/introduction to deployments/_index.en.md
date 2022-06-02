@@ -21,13 +21,13 @@ For more detailed information about protection levels, see Get Started with Aler
 
 Alert Logic Essentials coverage provides deployment automation for assets in your AWS or Azure environments, access to continuous asset discovery, and asset visibility for your deployments. Alert Logic continuously tests your environments with vulnerability scanning and cloud configuration scanning to help you detect and remediate exposures.
 
-### Alert Logic Professional
+#### Alert Logic Professional
 
 Alert Logic Professional coverage provides the capabilities from Essentials, plus access to network intrusion detection, and log and security analytics.
 
 ### Deployment types
 
-### AWS Deployments
+#### AWS Deployments
 
 Alert Logic supports integrations with several AWS security services. To protect your AWS deployment, you must set up an AWS cross-account role to allow Alert Logic access to your AWS account. The Alert Logic console steps you through IAM role creation.
 
@@ -35,7 +35,7 @@ Alert Logic provides AWS CloudFormation templates to automate creation of the co
 
 Each AWS deployment mode allows a different level of control over the creation of scanning instances and subnets.
 
-### Automatic Mode
+##### Automatic Mode
 
 Automatic Mode is available only for AWS deployments. Alert Logic recommends Automatic Mode if you want Alert Logic to deploy and maintain new VPC subnets used for scanning instances. If you choose Automatic Mode, you can create the IAM policy and role by using either an AWS CloudFormation template or your own policy document.
 
@@ -55,7 +55,7 @@ For a Professional subscription or the Enterprise add-on, Alert Logic automatica
 * A /28 subnet for each IDS appliance deployed in each Availability Zone
 * One IDS instance per Availability Zone (c5.xlarge by default)—outbound Internet connectivity required
 
-### Manual Mode
+##### Manual Mode
 
 Select Manual Mode if you want to manage subnets for scanning instances when you create an AWS deployment. If you choose Manual Mode, you can create the IAM policy and role by using either an AWS CloudFormation template or your own policy document.
 
@@ -77,7 +77,7 @@ In addition, Manual Mode deployments require you to log into the AWS console and
 * Deploy a network IDS appliance (Professional subscription only).
 * Deploy a scanning appliance.
 
-### Azure Deployments
+#### Azure Deployments
 
 Alert Logic supports integration with several Azure services. To protect your Azure deployment, you must create a Role-Based Access Control (RBAC) role in Azure to allow Alert Logic to access your account.
 
@@ -88,7 +88,7 @@ For Professional subscriptions, set up:
 * Install appliance
 * Install agent
 
-### Data Center deployments
+#### Data Center deployments
 
 The Data Center deployments allow you to monitor and protect your cloud-based or on-premisis data centers. The Data Center page in the Alert Logic console displays the list of appliances, agents, hosts, and log collectors if subscribed to the Professional coverage.
 
