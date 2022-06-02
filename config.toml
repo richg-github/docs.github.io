@@ -75,7 +75,7 @@ white = "#fff"
 light = "#FBFBFB"
 
 # Font Variables
-primary_font = "Montserrat:wght@300;400;500;600;700;800"
+primary_font = "Fellix-Regular:wght@300;400;500;600;700;800"
 primary_font_type = "sans-serif" # [serif/sans-serif]
 secondary_font = ""
 secondary_font_type = "" # [serif/sans-serif]
