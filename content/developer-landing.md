@@ -8,6 +8,7 @@ With the Alert Logic developer portal, you can:
 * Integrate with any tool using comprehensive API documentation
 * Rely upon clear, concise documentation help you solve common problems
 
+
 ## Documentation resources
 
 [Alert Logic Developer Portal](https://developer.alertlogic.com/)
