@@ -1,14 +1,7 @@
-/*  typography 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
-*/
-
-@font-face {
-  font-family: '$font-primary';
-  src:  url('fonts/Fellix-Medium.woff2') format('woff2'),
-}
+/*  typography */
 
 body {
-  font-family: $font-primary;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.6;
@@ -18,40 +11,36 @@ body {
 p, .paragraph {
   font-weight: 400;
   color: $text-color;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: $font-primary;
+  font-size: 1rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
   color: $text-color-dark;
-  font-family: $font-primary;
-  font-weight: 700;
   line-height: 1.2;
 }
 
 h1, .h1{
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: 800;
   @include mobile {
-    font-size: 36px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 }
 
 h2, .h2{
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 700;
   @include mobile {
-    font-size: 32px;
+    font-size: 1rem;
     font-weight: 600;
   }
 }
 
 h3, .h3{
-  font-size: 32px;
+  font-size: 1.2rem;
   @include mobile {
-    font-size: 28px;
+    font-size: 0.9rem;
   }
 }
 
