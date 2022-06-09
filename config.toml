@@ -84,7 +84,7 @@ icon_font = "Font Awesome 5 Free"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/al-logo.svg"
 favicon = "images/favicon.png"
 # Meta data
 description = "This is meta description"
@@ -100,15 +100,15 @@ enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
-[[params.nav_button]]
-style = "outline" # available style: solid, outline
-label = "changelog"
-link = "changelog"
+#[[params.nav_button]]
+#style = "outline" # available style: solid, outline
+#label = "changelog"
+#link = "changelog"
 
-[[params.nav_button]]
-style = "solid" # available style: solid, outline
-label = "contact"
-link = "contact"
+#[[params.nav_button]]
+#style = "solid" # available style: solid, outline
+#label = "contact"
+#link = "contact"
 
 
 ############################# social site ########################
